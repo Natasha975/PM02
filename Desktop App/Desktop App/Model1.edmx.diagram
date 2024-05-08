@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a40df0c891e9461db212d2e0cf2fb9e0" Name="Diagram1">
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.add_inform" Width="1.5" PointX="5.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.authorization" Width="1.5" PointX="5.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.ins_company" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.ins_policy_type" Width="1.5" PointX="3" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.order" Width="1.5" PointX="8.25" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.payment_servic" Width="1.5" PointX="10.5" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.performed_service" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.role" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.service" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.service_order" Width="1.5" PointX="10.5" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.status_order" Width="1.5" PointX="6" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.status_service" Width="1.5" PointX="6" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.user" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.work_analyzer" Width="1.5" PointX="3" PointY="13.75" IsExpanded="true" />
+        <AssociationConnector Association="MedicalLaboratoryModel.FK_add_inform_ins_companie" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalLaboratoryModel.FK_add_inform_ins_policy_type" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalLaboratoryModel.FK_add_inform_user" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalLaboratoryModel.FK_authorization_user" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalLaboratoryModel.FK_order_status" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalLaboratoryModel.FK_order_status_servic" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalLaboratoryModel.FK_order_user" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalLaboratoryModel.FK_payment_servic_order" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalLaboratoryModel.FK_per_servic_order_order" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalLaboratoryModel.FK_performed_service_servic" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalLaboratoryModel.FK_performed_service_user" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalLaboratoryModel.FK_performed_service_work_analyzer" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalLaboratoryModel.FK_user_role" ManuallyRouted="false" />
+        <AssociationConnector Association="MedicalLaboratoryModel.FK_per_servic_order_servic" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.biomaterial" Width="1.5" PointX="8.375" PointY="0.875" />
+        <AssociationConnector Association="MedicalLaboratoryModel.FK_order_biomaterial" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
