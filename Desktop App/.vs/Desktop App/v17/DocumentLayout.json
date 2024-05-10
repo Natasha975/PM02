@@ -1,26 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App \u2014 \u043A\u043E\u043F\u0438\u044F\\Desktop App\\",
+  "WorkspaceRootPath": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C.02\\desktop app \u2014 \u043A\u043E\u043F\u0438\u044F\\desktop app\\accountantwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|solutionrelative:accountantwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C.02\\desktop app\\orderwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|solutionrelative:orderwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C.02\\desktop app \u2014 \u043A\u043E\u043F\u0438\u044F\\desktop app\\adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|solutionrelative:adminwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C.02\\desktop app\\labassistantwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|solutionrelative:labassistantwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C.02\\desktop app \u2014 \u043A\u043E\u043F\u0438\u044F\\desktop app\\adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|solutionrelative:adminwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C.02\\desktop app\\orderwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|solutionrelative:orderwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App \u2014 \u043A\u043E\u043F\u0438\u044F\\Desktop App\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C.02\\desktop app \u2014 \u043A\u043E\u043F\u0438\u044F\\desktop app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C.02\\desktop app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\AppData\\Local\\Temp\\Rar$DIa13000.14325\\SpisokAlbum.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B1E4ADAA-615F-4281-80E9-6D779BC720BE}|Desktop App.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +33,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,65 +41,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountantWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App \u2014 \u043A\u043E\u043F\u0438\u044F\\Desktop App\\AccountantWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AccountantWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App \u2014 \u043A\u043E\u043F\u0438\u044F\\Desktop App\\AccountantWindow.xaml.cs",
-              "RelativeToolTip": "AccountantWindow.xaml.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABwAAAADAAAA",
+              "DocumentIndex": 1,
+              "Title": "LabAssistantWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App\\LabAssistantWindow.xaml.cs",
+              "RelativeDocumentMoniker": "LabAssistantWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App\\LabAssistantWindow.xaml.cs",
+              "RelativeToolTip": "LabAssistantWindow.xaml.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAUwCYAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T11:53:02.692Z",
+              "WhenOpened": "2024-05-10T10:41:23.103Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AdminWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App \u2014 \u043A\u043E\u043F\u0438\u044F\\Desktop App\\AdminWindow.xaml",
-              "RelativeDocumentMoniker": "AdminWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App \u2014 \u043A\u043E\u043F\u0438\u044F\\Desktop App\\AdminWindow.xaml",
-              "RelativeToolTip": "AdminWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-07T11:48:49.747Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App \u2014 \u043A\u043E\u043F\u0438\u044F\\Desktop App\\AdminWindow.xaml.cs",
-              "RelativeDocumentMoniker": "AdminWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App \u2014 \u043A\u043E\u043F\u0438\u044F\\Desktop App\\AdminWindow.xaml.cs",
-              "RelativeToolTip": "AdminWindow.xaml.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAACIAAAAQAAAA",
+              "Title": "OrderWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App\\OrderWindow.xaml.cs",
+              "RelativeDocumentMoniker": "OrderWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App\\OrderWindow.xaml.cs",
+              "RelativeToolTip": "OrderWindow.xaml.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAEwAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T11:15:45.569Z",
+              "WhenOpened": "2024-05-10T10:23:01.57Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App \u2014 \u043A\u043E\u043F\u0438\u044F\\Desktop App\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App \u2014 \u043A\u043E\u043F\u0438\u044F\\Desktop App\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
+              "DocumentIndex": 0,
+              "Title": "OrderWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App\\OrderWindow.xaml",
+              "RelativeDocumentMoniker": "OrderWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App\\OrderWindow.xaml",
+              "RelativeToolTip": "OrderWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-06T10:29:00.315Z",
+              "WhenOpened": "2024-05-10T10:22:54.509Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App \u2014 \u043A\u043E\u043F\u0438\u044F\\Desktop App\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App \u2014 \u043A\u043E\u043F\u0438\u044F\\Desktop App\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAAADsAAAAzAAAA",
+              "Title": "SpisokAlbum.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\AppData\\Local\\Temp\\Rar$DIa13000.14325\\SpisokAlbum.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa13000.14325\\SpisokAlbum.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\AppData\\Local\\Temp\\Rar$DIa13000.14325\\SpisokAlbum.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\Rar$DIa13000.14325\\SpisokAlbum.xaml.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAAC8AAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-06T10:28:57.759Z",
+              "WhenOpened": "2024-05-10T09:45:34.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF8AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T08:55:36.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Desktop App\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-06T10:29:00.315Z",
               "EditorCaption": ""
             }
           ]

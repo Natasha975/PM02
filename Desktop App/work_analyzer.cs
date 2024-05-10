@@ -21,10 +21,17 @@ namespace Desktop_App
         }
     
         public int id { get; set; }
+        public Nullable<int> analyzer_id { get; set; }
         public System.DateTime order_received_date { get; set; }
-        public System.TimeSpan order_execution_time { get; set; }
+        public System.TimeSpan order_received_time { get; set; }
+        public long order_execution_time_sec_ { get; set; }
+        public Nullable<int> service_id { get; set; }
+        public string result { get; set; }
+        public string status { get; set; }
     
+        public virtual analyzer analyzer { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<performed_service> performed_service { get; set; }
+        public virtual service service { get; set; }
     }
 }

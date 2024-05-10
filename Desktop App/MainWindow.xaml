@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Desktop_App"
         mc:Ignorable="d"
-        Title="Мед Лаб" Height="359" Width="550" Background="#FF76E383">
+        Title="Мед Лаб" Height="359" Width="550" Background="#FF76E383" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid>
         <Label Content="Логин:" HorizontalAlignment="Left" Margin="145,91,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="16" FontStyle="Italic"/>
         <Label Content="Пароль:" HorizontalAlignment="Left" Margin="145,152,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="16" FontStyle="Italic"/>
         <TextBox x:Name="tbLogin" HorizontalAlignment="Left" Margin="243,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="139" FontFamily="Comic Sans MS" FontSize="16" FontStyle="Italic"/>
-        <Button x:Name="btvxod" Content="Войти" HorizontalAlignment="Left" Margin="208,265,0,0" VerticalAlignment="Top" Height="33" Width="120" FontFamily="Comic Sans MS" FontSize="16" FontStyle="Italic" Click="btvxod_Click" Background="White"/>
+        <Button x:Name="btvxod" Content="Войти" HorizontalAlignment="Left" Margin="208,247,0,0" VerticalAlignment="Top" Height="33" Width="120" FontFamily="Comic Sans MS" FontSize="16" FontStyle="Italic" Click="btvxod_Click" Background="White"/>
         <Label Content="Авторизация" HorizontalAlignment="Left" Margin="184,30,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS" FontSize="20" Height="41" Width="168"/>
         <PasswordBox x:Name="passBox" HorizontalAlignment="Left" Margin="243,0,0,0" VerticalAlignment="Center" Width="139" Height="23" FontFamily="Comic Sans MS" FontSize="16"/>
         <Image Source="\logo.ico" HorizontalAlignment="Left" Height="62" Margin="23,10,0,0" VerticalAlignment="Top" Width="59"/>

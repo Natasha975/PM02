@@ -1,0 +1,31 @@
+﻿<Window x:Class="Desktop_App.OrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Desktop_App"
+        mc:Ignorable="d"
+        Title="Мед Лаб" Height="450" Width="800" Background="#FF76E383" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="nazad" FontFamily="Comic Sans MS" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" Click="nazad_Click" Content="Назад" HorizontalAlignment="Left" Margin="14,22,0,0" VerticalAlignment="Top" Height="34" Width="73"/>
+        <Label x:Name="lbUserLastname" FontFamily="Comic Sans MS" FontSize="16" HorizontalAlignment="Left" Margin="110,22,0,0" VerticalAlignment="Top" Height="34" Width="80"/>
+        <Label x:Name="lbUserName" FontFamily="Comic Sans MS" FontSize="16" HorizontalAlignment="Left" Margin="195,22,0,0" VerticalAlignment="Top" Height="34" Width="67"/>
+        <Label Content="Формирование заказа" FontFamily="Comic Sans MS" FontSize="20" HorizontalAlignment="Center" Margin="0,18,0,0" VerticalAlignment="Top"/>
+        <Label Content="Код пробирки" FontFamily="Comic Sans MS" FontSize="16" HorizontalAlignment="Left" Margin="79,84,0,0" VerticalAlignment="Top"/>
+        <Image  Name="im" Margin="512,101,80,152" />
+
+        <Button x:Name="CodeBtn" FontFamily="Comic Sans MS" Content="Сформировать" Click="CodeBtn_Click" HorizontalAlignment="Left" Margin="539,280,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" Width="126" Background="{x:Null}" BorderBrush="White" Foreground="White" Height="28" Panel.ZIndex="1"/>
+        <Button x:Name="SaveBtn" FontFamily="Comic Sans MS" Content="Сохранить" HorizontalAlignment="Left" Margin="539,320,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Bold" Width="126" Background="{x:Null}" BorderBrush="White" Foreground="White" Height="28" Panel.ZIndex="1"/>
+        <TextBox x:Name="tbCode" TextWrapping="Wrap" FontFamily="Comic Sans MS" FontSize="16" Margin="224,89,440,301"/>
+        <Label Content="Статус заказа" FontFamily="Comic Sans MS" FontSize="16" HorizontalAlignment="Left" Margin="79,144,0,0" VerticalAlignment="Top"/>
+        <Label Content="Статус услуги" FontFamily="Comic Sans MS" FontSize="16" HorizontalAlignment="Left" Margin="79,191,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пациент" FontFamily="Comic Sans MS" FontSize="16" HorizontalAlignment="Left" Margin="79,237,0,0" VerticalAlignment="Top"/>
+        <Label Content="Биоматериал" FontFamily="Comic Sans MS" FontSize="16" HorizontalAlignment="Left" Margin="79,284,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbOrder" HorizontalAlignment="Left" Margin="224,151,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbService" HorizontalAlignment="Left" Margin="224,201,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbUser" HorizontalAlignment="Left" Margin="224,247,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbBio" HorizontalAlignment="Left" Margin="224,294,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btorder" Click="btorder_Click" Content="Оформить заказ" FontFamily="Comic Sans MS" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" HorizontalAlignment="Center" Margin="0,334,0,0" VerticalAlignment="Top" Height="29" Width="140"/>
+        <Label Content="Штрих-код" FontFamily="Comic Sans MS" FontSize="16" HorizontalAlignment="Left" Margin="555,84,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

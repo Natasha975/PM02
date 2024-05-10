@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Desktop_App"
         mc:Ignorable="d"
-        Title="Мед Лаб (Админ)" Height="450" Width="800" Background="#FF76E383" Loaded="AdminWindow_Loaded">
+        Title="Мед Лаб (Администратор)" Height="450" Width="800" Background="#FF76E383" Loaded="AdminWindow_Loaded">
     <Grid>
         <Button x:Name="nazad" Click="nazad_Click" Content="Назад" HorizontalAlignment="Left" Margin="14,22,0,0" VerticalAlignment="Top" Height="34" Width="73"/>
         <Label x:Name="lbUserLastname" HorizontalAlignment="Left" Margin="110,22,0,0" VerticalAlignment="Top" Height="34" Width="80"/>

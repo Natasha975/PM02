@@ -36,9 +36,7 @@ C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\D
 C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\Desktop App.csproj.CoreCompileInputs.cache
 C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\Desktop .D9A31D67.Up2Date
 C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\AdminWindow.g.cs
-C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\laboratoryAssistantWindow.g.cs
 C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\AdminWindow.baml
-C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\laboratoryAssistantWindow.baml
 C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App — копия\Desktop App\bin\Debug\Desktop App.exe.config
 C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App — копия\Desktop App\bin\Debug\Desktop App.exe
 C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App — копия\Desktop App\bin\Debug\Desktop App.pdb
@@ -67,3 +65,45 @@ C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App — коп�
 C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App — копия\Desktop App\obj\Debug\Desktop .D9A31D67.Up2Date
 C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App — копия\Desktop App\obj\Debug\Desktop App.exe
 C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App — копия\Desktop App\obj\Debug\Desktop App.pdb
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\bin\Debug\Desktop App.exe.config
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\bin\Debug\Desktop App.exe
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\bin\Debug\Desktop App.pdb
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\bin\Debug\EntityFramework.dll
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\bin\Debug\EntityFramework.xml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\Desktop App.csproj.AssemblyReference.cache
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\AccountantWindow.g.cs
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\AdminWindow.g.cs
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\LabAssistantWindow.g.cs
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\MainWindow.g.cs
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\App.g.cs
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\Desktop App_Content.g.cs
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\Desktop App_MarkupCompile.cache
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\Desktop App_MarkupCompile.lref
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\AccountantWindow.baml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\AdminWindow.baml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\LabAssistantWindow.baml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\MainWindow.baml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\Desktop App.g.resources
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\Desktop_App.Properties.Resources.resources
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\Desktop App.csproj.GenerateResource.cache
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\Desktop App.csproj.CoreCompileInputs.cache
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\Desktop .D9A31D67.Up2Date
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\Desktop App.exe
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\Desktop App.pdb
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\OrderWindow.g.cs
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\Desktop App\obj\Debug\OrderWindow.baml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\bin\Debug\Aspose.BarCode.dll
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\bin\Debug\Aspose.BarCode.xml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\AccountantWindow.g.cs
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\LabAssistantWindow.g.cs
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\OrderWindow.g.cs
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\AccountantWindow.baml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\LabAssistantWindow.baml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\OrderWindow.baml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\LabAssisResearcherWindow.g.cs
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\LabAssisResearcherWindow.baml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\bin\Debug\MessagingToolkit.QRCode.dll

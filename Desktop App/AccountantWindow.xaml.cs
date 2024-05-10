@@ -25,17 +25,17 @@ namespace Desktop_App
 			InitializeComponent();
 			currentUser = users;
 		}
-		private void AdminWindow_Loaded(object sender, RoutedEventArgs e)
-		{
-			lbUserLastname.Content = currentUser.lastname;
-			lbUserName.Content = currentUser.name;
-		}
-
 		private void nazad_Click(object sender, RoutedEventArgs e)
 		{
 			MainWindow mainWindow = new MainWindow();
 			mainWindow.Show();
-			Close();
+			Hide();
 		}
-    }
+
+		private void Window_Loaded(object sender, RoutedEventArgs e)
+		{
+			lbUserLastname.Content = currentUser.lastname;
+			lbUserName.Content = currentUser.name;
+		}
+	}
 }

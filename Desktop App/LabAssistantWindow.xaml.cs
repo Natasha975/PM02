@@ -25,16 +25,28 @@ namespace Desktop_App
 			InitializeComponent();
 			currentUser = users;
 		}
-		private void AdminWindow_Loaded(object sender, RoutedEventArgs e)
-		{
-			lbUserLastname.Content = currentUser.lastname;
-			lbUserName.Content = currentUser.name;
-		}
 		private void nazad_Click(object sender, RoutedEventArgs e)
 		{
 			MainWindow mainWindow = new MainWindow();
 			mainWindow.Show();
 			Close();
 		}
-    }
+
+		private void Window_Loaded(object sender, RoutedEventArgs e)
+		{
+			lbUserLastname.Content = currentUser.lastname;
+			lbUserName.Content = currentUser.name;
+			using (var db = new MedicalLaboratoryEntities3())
+			{
+				cm.ItemsSource = db.user.ToList();
+				cm.DisplayMemberPath = "surname + name";
+			}
+		}
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			OrderWindow orderWindow = new OrderWindow(currentUser);
+			orderWindow.Show();
+			Close();
+		}
+	}
 }

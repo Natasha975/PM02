@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище MedicalLaboratoryModelContainer" CdmEntityContainer="MedicalLaboratoryEntities1">
+  <EntityContainerMapping StorageEntityContainer="Хранилище MedicalLaboratoryModelContainer" CdmEntityContainer="MedicalLaboratoryEntities3">
     <EntitySetMapping Name="add_inform">
       <EntityTypeMapping TypeName="MedicalLaboratoryModel.add_inform">
         <MappingFragment StoreEntitySet="add_inform">
@@ -10,10 +10,19 @@
           <ScalarProperty Name="passport_series" ColumnName="passport_series" />
           <ScalarProperty Name="passport_number" ColumnName="passport_number" />
           <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="photo" ColumnName="photo" />
           <ScalarProperty Name="email" ColumnName="email" />
           <ScalarProperty Name="ins_policy_number" ColumnName="ins_policy_number" />
           <ScalarProperty Name="ins_policy_type" ColumnName="ins_policy_type" />
           <ScalarProperty Name="ins_company_id" ColumnName="ins_company_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="analyzer">
+      <EntityTypeMapping TypeName="MedicalLaboratoryModel.analyzer">
+        <MappingFragment StoreEntitySet="analyzer">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -25,6 +34,15 @@
           <ScalarProperty Name="ip" ColumnName="ip" />
           <ScalarProperty Name="last_date_of_entry" ColumnName="last_date_of_entry" />
           <ScalarProperty Name="last_time_of_entry" ColumnName="last_time_of_entry" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="biomaterial">
+      <EntityTypeMapping TypeName="MedicalLaboratoryModel.biomaterial">
+        <MappingFragment StoreEntitySet="biomaterial">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="cost" ColumnName="cost" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -56,6 +74,8 @@
           <ScalarProperty Name="status_order" ColumnName="status_order" />
           <ScalarProperty Name="status_servic" ColumnName="status_servic" />
           <ScalarProperty Name="execution_time_day_" ColumnName="execution_time(day)" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="biomaterial_id" ColumnName="biomaterial_id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -68,15 +88,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="per_servic_order">
-      <EntityTypeMapping TypeName="MedicalLaboratoryModel.per_servic_order">
-        <MappingFragment StoreEntitySet="per_servic_order">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="id_servic" ColumnName="id_servic" />
-          <ScalarProperty Name="id_order" ColumnName="id_order" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="performed_service">
       <EntityTypeMapping TypeName="MedicalLaboratoryModel.performed_service">
         <MappingFragment StoreEntitySet="performed_service">
@@ -86,6 +97,7 @@
           <ScalarProperty Name="executor_id" ColumnName="executor_id" />
           <ScalarProperty Name="analyzer_id" ColumnName="analyzer_id" />
           <ScalarProperty Name="patient_id" ColumnName="patient_id" />
+          <ScalarProperty Name="result" ColumnName="result" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -97,15 +109,24 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="servic">
-      <EntityTypeMapping TypeName="MedicalLaboratoryModel.servic">
-        <MappingFragment StoreEntitySet="servic">
+    <EntitySetMapping Name="service">
+      <EntityTypeMapping TypeName="MedicalLaboratoryModel.service">
+        <MappingFragment StoreEntitySet="service">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="service_name" ColumnName="service_name" />
           <ScalarProperty Name="cost" ColumnName="cost" />
           <ScalarProperty Name="code" ColumnName="code" />
           <ScalarProperty Name="execution_time_day_" ColumnName="execution_time(day)" />
           <ScalarProperty Name="mean_deviation" ColumnName="mean_deviation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="service_order">
+      <EntityTypeMapping TypeName="MedicalLaboratoryModel.service_order">
+        <MappingFragment StoreEntitySet="service_order">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_service" ColumnName="id_service" />
+          <ScalarProperty Name="id_order" ColumnName="id_order" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -117,9 +138,9 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="status_servic">
-      <EntityTypeMapping TypeName="MedicalLaboratoryModel.status_servic">
-        <MappingFragment StoreEntitySet="status_servic">
+    <EntitySetMapping Name="status_service">
+      <EntityTypeMapping TypeName="MedicalLaboratoryModel.status_service">
+        <MappingFragment StoreEntitySet="status_service">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="name" ColumnName="name" />
         </MappingFragment>
@@ -153,8 +174,13 @@
       <EntityTypeMapping TypeName="MedicalLaboratoryModel.work_analyzer">
         <MappingFragment StoreEntitySet="work_analyzer">
           <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="analyzer_id" ColumnName="analyzer_id" />
           <ScalarProperty Name="order_received_date" ColumnName="order_received_date" />
-          <ScalarProperty Name="order_execution_time" ColumnName="order_execution_time" />
+          <ScalarProperty Name="order_received_time" ColumnName="order_received_time" />
+          <ScalarProperty Name="order_execution_time_sec_" ColumnName="order_execution_time(sec)" />
+          <ScalarProperty Name="service_id" ColumnName="service_id" />
+          <ScalarProperty Name="result" ColumnName="result" />
+          <ScalarProperty Name="status" ColumnName="status" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

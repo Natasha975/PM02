@@ -19,6 +19,7 @@ namespace Desktop_App
         {
             this.add_inform = new HashSet<add_inform>();
             this.authorization = new HashSet<authorization>();
+            this.order = new HashSet<order>();
             this.performed_service = new HashSet<performed_service>();
         }
     
@@ -34,6 +35,8 @@ namespace Desktop_App
         public virtual ICollection<add_inform> add_inform { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<authorization> authorization { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<order> order { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<performed_service> performed_service { get; set; }
         public virtual role role1 { get; set; }

@@ -18,7 +18,7 @@ namespace Desktop_App
         public order()
         {
             this.payment_servic = new HashSet<payment_servic>();
-            this.per_servic_order = new HashSet<per_servic_order>();
+            this.service_order = new HashSet<service_order>();
         }
     
         public int id { get; set; }
@@ -26,12 +26,16 @@ namespace Desktop_App
         public Nullable<int> status_order { get; set; }
         public Nullable<int> status_servic { get; set; }
         public int execution_time_day_ { get; set; }
+        public Nullable<int> user_id { get; set; }
+        public Nullable<int> biomaterial_id { get; set; }
     
+        public virtual biomaterial biomaterial { get; set; }
         public virtual status_order status_order1 { get; set; }
-        public virtual status_servic status_servic1 { get; set; }
+        public virtual status_service status_service { get; set; }
+        public virtual user user { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<payment_servic> payment_servic { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<per_servic_order> per_servic_order { get; set; }
+        public virtual ICollection<service_order> service_order { get; set; }
     }
 }

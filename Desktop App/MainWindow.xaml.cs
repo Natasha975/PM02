@@ -23,18 +23,20 @@ namespace Desktop_App
 	{
 		public MainWindow()
 		{
-			InitializeComponent();		
+			InitializeComponent();
+			Loaded += Window_Loaded;
 		}
 		private int loginA = 0;
 		private const int maxLoginA = 1;
 		private bool captchaEnabled = false;
+		
 		private void btvxod_Click(object sender, RoutedEventArgs e)
 		{
 			string log = tbLogin.Text;
 			string pass = passBox.Password;
 			try
 			{
-				using (var db = new MedicalLaboratoryEntities1())
+				using (var db = new MedicalLaboratoryEntities3())
 				{
 					var usern = db.user.FirstOrDefault(us => us.login  == log && us.password == pass);
 					var rol = db.role;
@@ -44,6 +46,7 @@ namespace Desktop_App
 						{
 							captchaEnabled = true;
 							CapTB1.Text = captcha();
+							CapTB.Visibility = Visibility.Visible;
 						}
 						MessageBox.Show("Неверно введен логин или пароль!");
 						loginA++;
@@ -60,18 +63,26 @@ namespace Desktop_App
 							AdminWindow adminForm = new AdminWindow(currentUser);
 							adminForm.Show();
 							Close();
-
 						}
 						else if (usern.role == 3)
 						{
-							AccountantWindow accountantWindow = new AccountantWindow();
+							user currentUser = GetUserFromDatabase(log, pass);
+							AccountantWindow accountantWindow = new AccountantWindow(currentUser);
 							accountantWindow.Show();
 							this.Hide();
 						}
 						else if (usern.role == 4)
 						{
-							LabAssistantWindow labAssistantWindow = new LabAssistantWindow();
+							user currentUser = GetUserFromDatabase(log, pass);
+							LabAssistantWindow labAssistantWindow = new LabAssistantWindow(currentUser);
 							labAssistantWindow.Show();
+							this.Hide();
+						}
+						else if (usern.role == 5)
+						{
+							user currentUser = GetUserFromDatabase(log, pass);
+							LabAssisResearcherWindow labAssisResearcher = new LabAssisResearcherWindow(currentUser);
+							labAssisResearcher.Show();
 							this.Hide();
 						}
 						else { MessageBox.Show("Ошибка"); }
@@ -82,13 +93,12 @@ namespace Desktop_App
 		}
 		private user GetUserFromDatabase(string login, string password)
 		{
-			using (var db = new MedicalLaboratoryEntities1())
+			using (var db = new MedicalLaboratoryEntities3())
 			{
 				var usern = db.user.FirstOrDefault(u => u.login == login && u.password == password);
 				return usern;
 			}
 		}
-
 		public string captcha()
 		{
 			Random rnd = new Random();
@@ -102,6 +112,11 @@ namespace Desktop_App
 				captcha += z[j];
 			}
 			return captcha;
+		}
+
+		private void Window_Loaded(object sender, RoutedEventArgs e)
+		{
+			CapTB.Visibility = Visibility.Collapsed;
 		}
 	}
 }

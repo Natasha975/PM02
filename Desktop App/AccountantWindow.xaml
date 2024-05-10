@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Desktop_App"
         mc:Ignorable="d"
-        Title="AccountantWindow" Height="450" Width="800" Background="#FF76E383" Loaded="AdminWindow_Loaded">
+        Title="Мед Лаб (Бухгалтер)" Height="450" Width="800" Background="#FF76E383" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="nazad" Click="nazad_Click" Content="Назад" HorizontalAlignment="Left" Margin="14,22,0,0" VerticalAlignment="Top" Height="34" Width="73"/>
+        <Button x:Name="nazad" FontFamily="Comic Sans MS" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" Click="nazad_Click" Content="Назад" HorizontalAlignment="Left" Margin="14,22,0,0" VerticalAlignment="Top" Height="34" Width="73"/>
         <Label x:Name="lbUserLastname" HorizontalAlignment="Left" Margin="110,22,0,0" VerticalAlignment="Top" Height="34" Width="80"/>
         <Label x:Name="lbUserName" HorizontalAlignment="Left" Margin="195,22,0,0" VerticalAlignment="Top" Height="34" Width="67"/>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="32,76,117,121"/>
     </Grid>
 </Window>

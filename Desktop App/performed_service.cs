@@ -17,7 +17,7 @@ namespace Desktop_App
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public performed_service()
         {
-            this.per_servic_order = new HashSet<per_servic_order>();
+            this.service_order = new HashSet<service_order>();
         }
     
         public int id { get; set; }
@@ -26,11 +26,11 @@ namespace Desktop_App
         public int executor_id { get; set; }
         public int analyzer_id { get; set; }
         public int patient_id { get; set; }
+        public string result { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<per_servic_order> per_servic_order { get; set; }
-        public virtual servic servic { get; set; }
         public virtual user user { get; set; }
         public virtual work_analyzer work_analyzer { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<service_order> service_order { get; set; }
     }
 }

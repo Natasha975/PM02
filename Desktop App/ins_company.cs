@@ -23,7 +23,7 @@ namespace Desktop_App
         public int id { get; set; }
         public string company_name { get; set; }
         public string address { get; set; }
-        public string inn { get; set; }
+        public Nullable<long> inn { get; set; }
         public string r_s { get; set; }
         public string bik { get; set; }
     
