@@ -1,0 +1,16 @@
+﻿<Window x:Class="Desktop_App.SelectServiceWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Desktop_App"
+        mc:Ignorable="d"
+        Title="Мед Лаб" Height="352" Width="522" Loaded="Window_Loaded" Background="#FF76E383" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <ComboBox x:Name="cbSer" HorizontalAlignment="Left" Margin="245,53,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Услуга" HorizontalAlignment="Left" Margin="157,49,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btIss" Click="btIss_Click" Content="Отправить на исследование" HorizontalAlignment="Center" Margin="0,168,0,0" VerticalAlignment="Top" Height="32" Width="180"/>
+        <ComboBox x:Name="cbAn" HorizontalAlignment="Left" Margin="245,107,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Анализатор" HorizontalAlignment="Left" Margin="157,103,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>

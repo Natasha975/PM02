@@ -66,21 +66,27 @@ namespace Desktop_App
 		{
 			try
 			{
-				if (tbCode.Text != "")
+				int code;
+				int lastOrderNumber = int.Parse(tbCode.Text);
+				if (!int.TryParse(tbCode.Text, out code))
 				{
-					string qr = tbCode.Text;
-					QRCodeEncoder encoder = new QRCodeEncoder();
-					Bitmap qrcode = encoder.Encode(qr);
-					MemoryStream ms = new MemoryStream();
-					((System.Drawing.Bitmap)qrcode).Save(ms, System.Drawing.Imaging.ImageFormat.Bmp);
-					BitmapImage image = new BitmapImage();
-					image.BeginInit();
-					ms.Seek(0, SeekOrigin.Begin);
-					image.StreamSource = ms;
-					image.EndInit();
-					im.Source = image;
+					MessageBox.Show("Введенный код не является числом", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+					return;
 				}
-				else { MessageBox.Show("Ошибка"); }
+				string uniqueCode = GenerateUniqueCode();
+				string barcode = $"{code}{lastOrderNumber.ToString("yyyyMMdd")}{uniqueCode}";
+				QRCodeEncoder encoder = new QRCodeEncoder();
+				Bitmap qrcode = encoder.Encode(barcode);
+				MemoryStream ms = new MemoryStream();
+				((System.Drawing.Bitmap)qrcode).Save(ms, System.Drawing.Imaging.ImageFormat.Bmp);
+				BitmapImage image = new BitmapImage();
+				image.BeginInit();
+				ms.Seek(0, SeekOrigin.Begin);
+				image.StreamSource = ms;
+				image.EndInit();
+				im.Source = image;
+
+
 				// Создать пустой MemoryStream
 				//using (var memoryStream = new MemoryStream())
 				//{
@@ -150,32 +156,6 @@ namespace Desktop_App
 			const string chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 			return new string(Enumerable.Repeat(chars, 6).Select(s => s[random.Next(s.Length)]).ToArray());
 		}
-		private void DisplayBarcode(string barcode)
-		{
-			// Генерация изображения штрих-кода
-			//Bitmap bitmap = barcod.;
-
-			// Отображение изображения в окне приложения
-			//im.Source = Imaging.CreateBitmapSourceFromHBitmap(
-			//	bitmap.GetHbitmap(),
-			//	IntPtr.Zero,
-			//	Int32Rect.Empty,
-			//	BitmapSizeOptions.FromEmptyOptions());
-		}
-		//private string GenerateBarcode(Barcode barcod)
-		//{
-		//	Путь к изображению
-		//	string imagePath = comboBarcodeType.Text + "." + barcode.ImageType;
-
-		//	Инициализировать генератор штрих-кода
-		//	BarcodeGenerator generator = new BarcodeGenerator(barcode.BarcodeType, barcode.Text);
-
-		//	Сохранить изображение
-		//	generator.Save(imagePath, barcode.ImageType);
-
-		//	return imagePath;
-		//}
-
 		private void btorder_Click(object sender, RoutedEventArgs e)
 		{
 			using (var db = new MedicalLaboratoryEntities3())

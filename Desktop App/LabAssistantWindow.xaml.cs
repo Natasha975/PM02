@@ -31,7 +31,6 @@ namespace Desktop_App
 			mainWindow.Show();
 			Close();
 		}
-
 		private void Window_Loaded(object sender, RoutedEventArgs e)
 		{
 			lbUserLastname.Content = currentUser.lastname;
@@ -42,7 +41,12 @@ namespace Desktop_App
 				cm.DisplayMemberPath = "surname + name";
 			}
 		}
-		private void Button_Click(object sender, RoutedEventArgs e)
+		private void btRed_Click(object sender, RoutedEventArgs e)
+		{
+			RedPatWindow window = new RedPatWindow();
+			window.ShowDialog();
+        }
+		private void btBio_Click(object sender, RoutedEventArgs e)
 		{
 			OrderWindow orderWindow = new OrderWindow(currentUser);
 			orderWindow.Show();

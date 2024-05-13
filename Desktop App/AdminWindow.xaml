@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="Мед Лаб (Администратор)" Height="450" Width="800" Background="#FF76E383" Loaded="AdminWindow_Loaded">
     <Grid>
-        <Button x:Name="nazad" Click="nazad_Click" Content="Назад" HorizontalAlignment="Left" Margin="14,22,0,0" VerticalAlignment="Top" Height="34" Width="73"/>
+        <Button x:Name="nazad" Click="nazad_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" Content="Назад" HorizontalAlignment="Left" Margin="14,22,0,0" VerticalAlignment="Top" Height="34" Width="73"/>
         <Label x:Name="lbUserLastname" HorizontalAlignment="Left" Margin="110,22,0,0" VerticalAlignment="Top" Height="34" Width="80"/>
         <Label x:Name="lbUserName" HorizontalAlignment="Left" Margin="195,22,0,0" VerticalAlignment="Top" Height="34" Width="67"/>
+        <Button Content="Отчеты" Click="Button_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" HorizontalAlignment="Left" Margin="14,73,0,0" VerticalAlignment="Top" Height="36" Width="73"/>
     </Grid>
 </Window>

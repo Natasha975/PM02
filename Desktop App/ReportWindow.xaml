@@ -1,0 +1,22 @@
+﻿<Window x:Class="Desktop_App.ReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Desktop_App"
+        mc:Ignorable="d"
+        Title="ReportWindow" Height="450" Width="800" Background="#FF76E383" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DataGrid x:Name="dgSer" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="34,74,182,74"/>
+        <DatePicker x:Name="dpStart" HorizontalAlignment="Left" Margin="153,33,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dpEnd" HorizontalAlignment="Left" Margin="276,33,0,0" VerticalAlignment="Top"/>
+        <Label Content="Выберите период" HorizontalAlignment="Left" Margin="34,31,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btPoisk" FontFamily="Comic Sans MS" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" Click="btPoisk_Click" Content="Найти" HorizontalAlignment="Left" Margin="416,33,0,0" VerticalAlignment="Top" Height="24" Width="61"/>
+        <Label Content="Кол. услуг" HorizontalAlignment="Left" Margin="42,365,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbKol" Content="" HorizontalAlignment="Left" Margin="132,365,0,0" VerticalAlignment="Top"/>
+        <Label Content="Кол. пациентов" HorizontalAlignment="Left" Margin="231,365,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbKolPat" Content="" HorizontalAlignment="Left" Margin="331,365,0,0" VerticalAlignment="Top"/>
+        <Button Content="Количество пациентов по услуге" Click="Button_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="10" HorizontalAlignment="Left" Margin="518,33,0,0" VerticalAlignment="Top" Height="24"/>
+        <Button x:Name="btchart" Content="График" Click="btchart_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="10" HorizontalAlignment="Left" Margin="716,33,0,0" VerticalAlignment="Top" Height="24"/>
+    </Grid>
+</Window>

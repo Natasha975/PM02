@@ -107,3 +107,17 @@ C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\O
 C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\LabAssisResearcherWindow.g.cs
 C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\LabAssisResearcherWindow.baml
 C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\SelectServiceWindow.g.cs
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\SelectServiceWindow.baml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\RedPatWindow.g.cs
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\RedPatWindow.baml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\ReportWindow.g.cs
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\ReportWindow.baml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\bin\Debug\LiveCharts.dll
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\bin\Debug\LiveCharts.pdb
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\bin\Debug\LiveCharts.xml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\ChartWindow.g.cs
+C:\Users\Наталья\Desktop\Практика ПМ.02\Desktop App\obj\Debug\ChartWindow.baml

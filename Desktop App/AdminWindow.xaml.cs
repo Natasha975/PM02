@@ -42,5 +42,11 @@ namespace Desktop_App
 			mainWindow.Show();
 			Close();
         }
+
+		private void Button_Click(object sender, RoutedEventArgs e)
+		{
+			ReportWindow window = new ReportWindow();
+			window.ShowDialog();
+        }
     }
 }

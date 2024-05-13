@@ -7,11 +7,12 @@
         mc:Ignorable="d"
         Title="Мед Лаб (Лаборант)" Height="450" Width="800" Background="#FF76E383" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="nazad" Background="White" Click="nazad_Click" Content="Назад" HorizontalAlignment="Left" Margin="14,22,0,0" VerticalAlignment="Top" Height="34" Width="73"/>
-        <Label x:Name="lbUserLastname" HorizontalAlignment="Left" Margin="110,22,0,0" VerticalAlignment="Top" Height="34" Width="80"/>
-        <Label x:Name="lbUserName" HorizontalAlignment="Left" Margin="195,22,0,0" VerticalAlignment="Top" Height="34" Width="67"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="33,86,183,30"/>
-        <ComboBox x:Name="cm" HorizontalAlignment="Left" Margin="649,124,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Принятие биоматериала" Background="White" Click="Button_Click" HorizontalAlignment="Left" Margin="630,180,0,0" VerticalAlignment="Top" Height="37" Width="146"/>
+        <Button x:Name="nazad" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" Click="nazad_Click" FontFamily="Comic Sans MS" Content="Назад" HorizontalAlignment="Left" Margin="14,22,0,0" VerticalAlignment="Top" Height="34" Width="73"/>
+        <Label x:Name="lbUserLastname" HorizontalAlignment="Left" FontFamily="Comic Sans MS" Margin="110,22,0,0" VerticalAlignment="Top" Height="34" Width="80"/>
+        <Label x:Name="lbUserName" HorizontalAlignment="Left" FontFamily="Comic Sans MS" Margin="195,22,0,0" VerticalAlignment="Top" Height="34" Width="67"/>
+        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" FontFamily="Comic Sans MS" Margin="33,86,183,30"/>
+        <ComboBox x:Name="cm" HorizontalAlignment="Left" FontFamily="Comic Sans MS" Margin="649,124,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btBio" Content="Принятие биоматериала" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="10" Click="btBio_Click" FontFamily="Comic Sans MS" HorizontalAlignment="Left" Margin="622,63,0,0" VerticalAlignment="Top" Height="37" Width="154"/>
+        <Button x:Name="btRed" Content="Редактировать данные о пациенте" FontFamily="Comic Sans MS" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="10" Click="btRed_Click" HorizontalAlignment="Left" Margin="590,22,0,0" VerticalAlignment="Top" Height="34" Width="186"/>
     </Grid>
 </Window>
