@@ -312,6 +312,8 @@
     <Resource Include="Account.jpeg" />
     <Resource Include="labIssl.png" />
     <Resource Include="lab.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>

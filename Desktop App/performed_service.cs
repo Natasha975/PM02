@@ -21,7 +21,6 @@ namespace Desktop_App
         }
     
         public int id { get; set; }
-        public int service_id { get; set; }
         public System.DateTime execution_date { get; set; }
         public int executor_id { get; set; }
         public int analyzer_id { get; set; }

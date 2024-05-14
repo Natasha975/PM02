@@ -29,7 +29,7 @@ namespace Desktop_App
 		{
 			lbUserLastname.Content = currentUser.lastname;
 			lbUserName.Content = currentUser.name;
-			using (var db = new MedicalLaboratoryEntities3())
+			using (var db = new MedicalLaboratoryEntities())
 			{
 				var query = from aut in db.authorization
 							join us in db.user on aut.user_id equals us.id
@@ -44,6 +44,7 @@ namespace Desktop_App
 								Роль = ro.name,
 								Дата = aut.last_date_of_entry,
 							};
+				dtHistory.ItemsSource = query.ToList();
 			}
 		}
 		private void nazad_Click(object sender, RoutedEventArgs e)

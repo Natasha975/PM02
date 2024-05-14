@@ -35,8 +35,8 @@
           <Property Name="id" Type="int" Nullable="false" />
           <Property Name="user_id" Type="int" Nullable="false" />
           <Property Name="ip" Type="nvarchar" MaxLength="50" />
-          <Property Name="last_date_of_entry" Type="date" />
-          <Property Name="last_time_of_entry" Type="time" Precision="7" Nullable="false" />
+          <Property Name="last_date_of_entry" Type="date" Nullable="false" />
+          <Property Name="last_time_of_entry" Type="time" Precision="7" />
         </EntityType>
         <EntityType Name="biomaterial">
           <Key>
@@ -89,7 +89,6 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" Nullable="false" />
-          <Property Name="service_id" Type="int" Nullable="false" />
           <Property Name="execution_date" Type="date" Nullable="false" />
           <Property Name="executor_id" Type="int" Nullable="false" />
           <Property Name="analyzer_id" Type="int" Nullable="false" />
@@ -168,7 +167,7 @@
           <Property Name="order_received_time" Type="time" Precision="7" Nullable="false" />
           <Property Name="order_execution_time(sec)" Type="bigint" Nullable="false" />
           <Property Name="service_id" Type="int" />
-          <Property Name="result" Type="nvarchar(max)" />
+          <Property Name="result" Type="int" />
           <Property Name="status" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <Association Name="FK_add_inform_ins_companie">
@@ -485,8 +484,8 @@
           <Property Name="id" Type="Int32" Nullable="false" />
           <Property Name="user_id" Type="Int32" Nullable="false" />
           <Property Name="ip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="last_date_of_entry" Type="DateTime" Precision="0" />
-          <Property Name="last_time_of_entry" Type="Time" Nullable="false" Precision="7" />
+          <Property Name="last_date_of_entry" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="last_time_of_entry" Type="Time" Precision="7" />
           <NavigationProperty Name="user" Relationship="Self.FK_authorization_user" FromRole="authorization" ToRole="user" />
         </EntityType>
         <EntityType Name="biomaterial">
@@ -550,7 +549,6 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" />
-          <Property Name="service_id" Type="Int32" Nullable="false" />
           <Property Name="execution_date" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="executor_id" Type="Int32" Nullable="false" />
           <Property Name="analyzer_id" Type="Int32" Nullable="false" />
@@ -643,7 +641,7 @@
           <Property Name="order_received_time" Type="Time" Nullable="false" Precision="7" />
           <Property Name="order_execution_time_sec_" Type="Int64" Nullable="false" />
           <Property Name="service_id" Type="Int32" />
-          <Property Name="result" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="result" Type="Int32" />
           <Property Name="status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="analyzer" Relationship="Self.FK_work_analyzer_analyzer" FromRole="work_analyzer" ToRole="analyzer" />
           <NavigationProperty Name="performed_service" Relationship="Self.FK_performed_service_work_analyzer" FromRole="work_analyzer" ToRole="performed_service" />
@@ -841,7 +839,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="MedicalLaboratoryEntities3" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="MedicalLaboratoryEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="add_inform" EntityType="Self.add_inform" />
           <EntitySet Name="analyzer" EntityType="Self.analyzer" />
           <EntitySet Name="authorization" EntityType="Self.authorization" />
@@ -929,7 +927,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище MedicalLaboratoryModelContainer" CdmEntityContainer="MedicalLaboratoryEntities3">
+        <EntityContainerMapping StorageEntityContainer="Хранилище MedicalLaboratoryModelContainer" CdmEntityContainer="MedicalLaboratoryEntities">
           <EntitySetMapping Name="add_inform">
             <EntityTypeMapping TypeName="MedicalLaboratoryModel.add_inform">
               <MappingFragment StoreEntitySet="add_inform">
@@ -1021,7 +1019,6 @@
             <EntityTypeMapping TypeName="MedicalLaboratoryModel.performed_service">
               <MappingFragment StoreEntitySet="performed_service">
                 <ScalarProperty Name="id" ColumnName="id" />
-                <ScalarProperty Name="service_id" ColumnName="service_id" />
                 <ScalarProperty Name="execution_date" ColumnName="execution_date" />
                 <ScalarProperty Name="executor_id" ColumnName="executor_id" />
                 <ScalarProperty Name="analyzer_id" ColumnName="analyzer_id" />

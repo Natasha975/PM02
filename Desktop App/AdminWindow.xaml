@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Мед Лаб (Администратор)" Height="450" Width="800" Background="#FF76E383" Loaded="AdminWindow_Loaded">
     <Grid>
+        <Label Content="История входа в приложение" FontFamily="Comic Sans MS" FontSize="20" HorizontalAlignment="Left" Margin="422,29,0,0" VerticalAlignment="Top"/>
         <Button x:Name="nazad" Click="nazad_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" Content="Назад" HorizontalAlignment="Left" Margin="14,22,0,0" VerticalAlignment="Top" Height="34" Width="73"/>
         <Label x:Name="lbUserLastname" HorizontalAlignment="Left" Margin="110,22,0,0" VerticalAlignment="Top" Height="34" Width="80"/>
         <Label x:Name="lbUserName" HorizontalAlignment="Left" Margin="195,22,0,0" VerticalAlignment="Top" Height="34" Width="67"/>

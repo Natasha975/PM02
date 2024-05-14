@@ -13,10 +13,10 @@ namespace Desktop_App
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MedicalLaboratoryEntities3 : DbContext
+    public partial class MedicalLaboratoryEntities : DbContext
     {
-        public MedicalLaboratoryEntities3()
-            : base("name=MedicalLaboratoryEntities3")
+        public MedicalLaboratoryEntities()
+            : base("name=MedicalLaboratoryEntities")
         {
         }
     

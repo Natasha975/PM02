@@ -20,7 +20,7 @@ namespace Desktop_App
             this.performed_service = new HashSet<performed_service>();
         }
 
-		public work_analyzer(int maxIdWork, int id1, DateTime now, TimeSpan timeSpan, int v1, int id2, string v2, string v3)
+		public work_analyzer(int maxIdWork, int id1, DateTime now, TimeSpan timeSpan, int v1, int id2, string v2)
 		{
 			MaxIdWork=maxIdWork;
 			Id1=id1;
@@ -29,7 +29,6 @@ namespace Desktop_App
 			V1=v1;
 			Id2=id2;
 			V2=v2;
-			V3=v3;
 		}
 
 		public int id { get; set; }
@@ -38,7 +37,7 @@ namespace Desktop_App
         public System.TimeSpan order_received_time { get; set; }
         public long order_execution_time_sec_ { get; set; }
         public Nullable<int> service_id { get; set; }
-        public string result { get; set; }
+        public Nullable<int> result { get; set; }
         public string status { get; set; }
     
         public virtual analyzer analyzer { get; set; }
@@ -52,6 +51,5 @@ namespace Desktop_App
 		public int V1 { get; }
 		public int Id2 { get; }
 		public string V2 { get; }
-		public string V3 { get; }
 	}
 }

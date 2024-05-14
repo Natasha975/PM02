@@ -4,24 +4,24 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="b8d39ac46ecb48019a57e470eec45a77" Name="Diagram1">
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.add_inform" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.analyzer" Width="1.5" PointX="3.75" PointY="2.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.authorization" Width="1.5" PointX="5.25" PointY="13.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.biomaterial" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.ins_company" Width="1.5" PointX="3" PointY="12.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.ins_policy_type" Width="1.5" PointX="3" PointY="15.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.order" Width="1.5" PointX="8.25" PointY="8.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.payment_servic" Width="1.5" PointX="10.5" PointY="9.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.performed_service" Width="1.5" PointX="8.25" PointY="4.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.role" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.service" Width="1.5" PointX="3.75" PointY="5" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.service_order" Width="1.5" PointX="10.5" PointY="6.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.status_order" Width="1.5" PointX="6" PointY="16.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.status_service" Width="1.5" PointX="6" PointY="18.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.user" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="MedicalLaboratoryModel.work_analyzer" Width="1.5" PointX="6" PointY="3.375" IsExpanded="true" />
+      <Diagram DiagramId="07fb17a429714b5ab1620a0e824b04ae" Name="Diagram1">
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.add_inform" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.analyzer" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.authorization" Width="1.5" PointX="5.25" PointY="12.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.biomaterial" Width="1.5" PointX="6" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.ins_company" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.ins_policy_type" Width="1.5" PointX="3" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.order" Width="1.5" PointX="8.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.payment_servic" Width="1.5" PointX="10.5" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.performed_service" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.role" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.service" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.service_order" Width="1.5" PointX="10.5" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.status_order" Width="1.5" PointX="6" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.status_service" Width="1.5" PointX="6" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.user" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="MedicalLaboratoryModel.work_analyzer" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
         <AssociationConnector Association="MedicalLaboratoryModel.FK_add_inform_ins_companie" ManuallyRouted="false" />
         <AssociationConnector Association="MedicalLaboratoryModel.FK_add_inform_ins_policy_type" ManuallyRouted="false" />
         <AssociationConnector Association="MedicalLaboratoryModel.FK_add_inform_user" ManuallyRouted="false" />

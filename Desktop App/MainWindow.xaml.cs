@@ -24,7 +24,7 @@ namespace Desktop_App
 			DateTime loginDate = DateTime.Now;
 			try
 			{
-				using (var db = new MedicalLaboratoryEntities3())
+				using (var db = new MedicalLaboratoryEntities())
 				{
 					var usern = db.user.FirstOrDefault(us => us.login  == log && us.password == pass);
 					var rol = db.role;
@@ -116,7 +116,7 @@ namespace Desktop_App
 		}
 		private user GetUserFromDatabase(string login, string password)
 		{
-			using (var db = new MedicalLaboratoryEntities3())
+			using (var db = new MedicalLaboratoryEntities())
 			{
 				var usern = db.user.FirstOrDefault(u => u.login == login && u.password == password);
 				return usern;

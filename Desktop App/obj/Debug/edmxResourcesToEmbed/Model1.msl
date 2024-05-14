@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Хранилище MedicalLaboratoryModelContainer" CdmEntityContainer="MedicalLaboratoryEntities3">
+  <EntityContainerMapping StorageEntityContainer="Хранилище MedicalLaboratoryModelContainer" CdmEntityContainer="MedicalLaboratoryEntities">
     <EntitySetMapping Name="add_inform">
       <EntityTypeMapping TypeName="MedicalLaboratoryModel.add_inform">
         <MappingFragment StoreEntitySet="add_inform">
@@ -92,7 +92,6 @@
       <EntityTypeMapping TypeName="MedicalLaboratoryModel.performed_service">
         <MappingFragment StoreEntitySet="performed_service">
           <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="service_id" ColumnName="service_id" />
           <ScalarProperty Name="execution_date" ColumnName="execution_date" />
           <ScalarProperty Name="executor_id" ColumnName="executor_id" />
           <ScalarProperty Name="analyzer_id" ColumnName="analyzer_id" />

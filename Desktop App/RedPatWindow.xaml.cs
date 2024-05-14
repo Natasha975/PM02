@@ -26,7 +26,7 @@ namespace Desktop_App
 		}
 		private void Window_Loaded(object sender, RoutedEventArgs e)
 		{
-			using (var db = new MedicalLaboratoryEntities3())
+			using (var db = new MedicalLaboratoryEntities())
 			{
 				cbPat.ItemsSource = db.user.ToList();
 				cbPat.DisplayMemberPath = "lastname";
@@ -38,7 +38,7 @@ namespace Desktop_App
 			{
 				string lastna = cbPat.SelectedItem.ToString();
 
-				using (var db = new MedicalLaboratoryEntities3())
+				using (var db = new MedicalLaboratoryEntities())
 				{
 					var patient = db.user.FirstOrDefault(u => u.lastname == lastna);
 					var day = db.add_inform.FirstOrDefault(i => i.user_id == patient.id)?.date_of_birth.Value;
@@ -59,7 +59,7 @@ namespace Desktop_App
 		private void btSave_Click(object sender, RoutedEventArgs e)
 		{
 			string surname = cbPat.SelectedItem.ToString();
-			using (var db = new MedicalLaboratoryEntities3())
+			using (var db = new MedicalLaboratoryEntities())
 			{
 				var patient = db.user.FirstOrDefault(u => u.lastname == surname);
 				var phone = db.add_inform.FirstOrDefault(i => i.user_id == patient.id);

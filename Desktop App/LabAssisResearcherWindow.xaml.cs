@@ -34,7 +34,7 @@ namespace Desktop_App
 		}
 		private void LoadData()
 		{
-			using (var db = new MedicalLaboratoryEntities3())
+			using (var db = new MedicalLaboratoryEntities())
 			{
 				var query = from work in db.work_analyzer
 							join ser in db.service on work.service_id equals ser.id
@@ -62,7 +62,6 @@ namespace Desktop_App
 			SelectServiceWindow window = new SelectServiceWindow();
 			window.ShowDialog();
 		}
-
 		private void btUpt_Click(object sender, RoutedEventArgs e)
 		{
 			LoadData();

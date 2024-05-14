@@ -39,7 +39,7 @@ namespace Desktop_App
 		{
 			try
 			{
-				using (var db = new MedicalLaboratoryEntities3())
+				using (var db = new MedicalLaboratoryEntities())
 				{
 					var query = from pay in db.payment_servic
 								join or in db.order on pay.order_id equals or.id
@@ -67,7 +67,7 @@ namespace Desktop_App
 			{
 				DateTime startDate = dpStart.SelectedDate ?? DateTime.MinValue;
 				DateTime endDate = dpEnd.SelectedDate ?? DateTime.MaxValue;
-				using (var db = new MedicalLaboratoryEntities3())
+				using (var db = new MedicalLaboratoryEntities())
 				{
 					var query = from pay in db.payment_servic
 								join or in db.order on pay.order_id equals or.id
@@ -128,7 +128,7 @@ namespace Desktop_App
 		}
 		private void btOp_Click(object sender, RoutedEventArgs e)
 		{
-
+			LoadDates();
 		}
 	}
 }

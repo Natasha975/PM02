@@ -23,7 +23,7 @@ namespace Desktop_App
 		public AddPatientWindow()
 		{
 			InitializeComponent();
-			using (var db = new MedicalLaboratoryEntities3())
+			using (var db = new MedicalLaboratoryEntities())
 			{
 				cbType.ItemsSource = db.ins_policy_type.ToList();
 				cbComp.ItemsSource = db.ins_company.ToList();
@@ -35,7 +35,7 @@ namespace Desktop_App
 		private void btAdd_Click(object sender, RoutedEventArgs e)
 		{
 			string login = RegisterVisitor(tbEmail.Text);
-			using (var db = new MedicalLaboratoryEntities3())
+			using (var db = new MedicalLaboratoryEntities())
 			{
 				try
 				{
@@ -106,7 +106,6 @@ namespace Desktop_App
 			const string chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 			return new string(Enumerable.Repeat(chars, 6).Select(s => s[random.Next(s.Length)]).ToArray());
 		}
-
 		private void tbSer_PreviewTextInput(object sender, TextCompositionEventArgs e)
 		{
 			if (!Char.IsDigit(e.Text, 0))

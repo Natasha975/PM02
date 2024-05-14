@@ -19,7 +19,7 @@ namespace Desktop_App
 		}
 		private void Window_Loaded(object sender, RoutedEventArgs e)
 		{
-			using (var db = new MedicalLaboratoryEntities3())
+			using (var db = new MedicalLaboratoryEntities())
 			{
 				cbSer.ItemsSource = db.service.ToList();
 				cbAn.ItemsSource = db.analyzer.ToList();
@@ -33,7 +33,7 @@ namespace Desktop_App
 			timer.Interval = TimeSpan.FromSeconds(10);
 			timer.Tick += Timer_Tick;
 			timer.Start();
-			using (var db = new MedicalLaboratoryEntities3())
+			using (var db = new MedicalLaboratoryEntities())
 			{
 				try
 				{
@@ -52,7 +52,7 @@ namespace Desktop_App
 						order_received_time = timeSpan,
 						order_execution_time_sec_ = 10,
 						service_id = selectedSer.id,
-						result = "Исследование",
+						result = 12,
 						status = "Отправлена на исследование",
 					};
 					try
@@ -67,7 +67,7 @@ namespace Desktop_App
 					}
 					using (FileStream fs = new FileStream("user.json", FileMode.OpenOrCreate))
 					{
-						work_analyzer tom = new work_analyzer(maxIdWork, selectedAn.id, DateTime.Now, timeSpan, 10, selectedSer.id, "Исследование", "Отправлена на исследование");
+						work_analyzer tom = new work_analyzer(maxIdWork, selectedAn.id, DateTime.Now, timeSpan, 10, selectedSer.id, "Отправлена на исследование");
 						await JsonSerializer.SerializeAsync<work_analyzer>(fs, tom);
 					}
 				}

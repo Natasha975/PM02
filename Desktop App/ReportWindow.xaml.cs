@@ -19,7 +19,7 @@ namespace Desktop_App
 			{
 				DateTime startDate = dpStart.SelectedDate ?? DateTime.MinValue;
 				DateTime endDate = dpEnd.SelectedDate ?? DateTime.MaxValue;
-				using (var db = new MedicalLaboratoryEntities3())
+				using (var db = new MedicalLaboratoryEntities())
 				{
 					int count = db.performed_service.Where(perSer => perSer.execution_date >= startDate && perSer.execution_date <= endDate).Count();
 					lbKol.Content = count;
@@ -41,7 +41,7 @@ namespace Desktop_App
 		}
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			using (var db = new MedicalLaboratoryEntities3())
+			using (var db = new MedicalLaboratoryEntities())
 			{
 				var query = from perSer in db.performed_service
 							join work in db.work_analyzer on perSer.analyzer_id equals work.id
@@ -59,6 +59,26 @@ namespace Desktop_App
 		{
 			ChartWindow window = new ChartWindow();
 			window.ShowDialog();
+		}
+		private void Window_Loaded(object sender, RoutedEventArgs e)
+		{
+			using (var db = new MedicalLaboratoryEntities())
+			{
+				var query = from perSer in db.performed_service
+							join work in db.work_analyzer on perSer.analyzer_id equals work.id
+							join ser in db.service on work.service_id equals ser.id
+							join us in db.user on perSer.patient_id equals us.id
+							join add in db.add_inform on us.id equals add.user_id
+							select new
+							{
+								Услуга = ser.service_name,
+								Дата = perSer.execution_date,
+								Фамилия = us.lastname,
+								Имя = us.name,
+								Полис = add.ins_policy_number,
+							};
+				dgSer.ItemsSource = query.ToList();
+			}
 		}
 	}
 }

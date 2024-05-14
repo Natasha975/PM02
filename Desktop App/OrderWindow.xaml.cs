@@ -43,7 +43,7 @@ namespace Desktop_App
 		{
 			InitializeComponent();
 			currentUser = users;	
-			using (var db = new MedicalLaboratoryEntities3())
+			using (var db = new MedicalLaboratoryEntities())
 			{
 				int last = db.order.Max(u => u.id) + 1;
 				tbCode.Text = last.ToString();
@@ -107,7 +107,7 @@ namespace Desktop_App
 		}
 		private void btorder_Click(object sender, RoutedEventArgs e)
 		{
-			using (var db = new MedicalLaboratoryEntities3())
+			using (var db = new MedicalLaboratoryEntities())
 			{
 				try
 				{

@@ -30,8 +30,8 @@
     <Property Name="id" Type="int" Nullable="false" />
     <Property Name="user_id" Type="int" Nullable="false" />
     <Property Name="ip" Type="nvarchar" MaxLength="50" />
-    <Property Name="last_date_of_entry" Type="date" />
-    <Property Name="last_time_of_entry" Type="time" Precision="7" Nullable="false" />
+    <Property Name="last_date_of_entry" Type="date" Nullable="false" />
+    <Property Name="last_time_of_entry" Type="time" Precision="7" />
   </EntityType>
   <EntityType Name="biomaterial">
     <Key>
@@ -84,7 +84,6 @@
       <PropertyRef Name="id" />
     </Key>
     <Property Name="id" Type="int" Nullable="false" />
-    <Property Name="service_id" Type="int" Nullable="false" />
     <Property Name="execution_date" Type="date" Nullable="false" />
     <Property Name="executor_id" Type="int" Nullable="false" />
     <Property Name="analyzer_id" Type="int" Nullable="false" />
@@ -163,7 +162,7 @@
     <Property Name="order_received_time" Type="time" Precision="7" Nullable="false" />
     <Property Name="order_execution_time(sec)" Type="bigint" Nullable="false" />
     <Property Name="service_id" Type="int" />
-    <Property Name="result" Type="nvarchar(max)" />
+    <Property Name="result" Type="int" />
     <Property Name="status" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <Association Name="FK_add_inform_ins_companie">
