@@ -27,14 +27,24 @@ namespace Desktop_App
 		}
 		private void AdminWindow_Loaded(object sender, RoutedEventArgs e)
 		{
-			//using (var db = new MedicalLaboratoryEntities1())
-			//{
-			//	cmbTitleSong.ItemsSource = db.Album.ToList();
-			//	cmbTitleSong.DisplayMemberPath = "Title";
-			//}
-			//LoadData();
 			lbUserLastname.Content = currentUser.lastname;
 			lbUserName.Content = currentUser.name;
+			using (var db = new MedicalLaboratoryEntities3())
+			{
+				var query = from aut in db.authorization
+							join us in db.user on aut.user_id equals us.id
+							join ro in db.role on us.role equals ro.id
+							select new
+							{
+								Код = aut.id,
+								Фамилия = us.lastname,
+								Имя = us.lastname,
+								Отчество = us.lastname,
+								Логин = us.login,
+								Роль = ro.name,
+								Дата = aut.last_date_of_entry,
+							};
+			}
 		}
 		private void nazad_Click(object sender, RoutedEventArgs e)
 		{
@@ -42,7 +52,6 @@ namespace Desktop_App
 			mainWindow.Show();
 			Close();
         }
-
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
 			ReportWindow window = new ReportWindow();

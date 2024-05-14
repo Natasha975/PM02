@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Desktop_App"
         mc:Ignorable="d"
-        Title="Мед Лаб (Лаборант)" Height="450" Width="800" Background="#FF76E383" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
+        Title="Мед Лаб (Лаборант)" Height="451" Width="472" Background="#FF76E383" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid>
         <Label Content="Фамилия" HorizontalAlignment="Left" Margin="53,76,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
         <Label Content="Имя" HorizontalAlignment="Left" Margin="53,107,0,0" VerticalAlignment="Top" FontFamily="Comic Sans MS"/>
@@ -25,6 +25,6 @@
         <TextBox x:Name="tbEmail" HorizontalAlignment="Left" Margin="236,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" FontFamily="Comic Sans MS"/>
         <Button x:Name="btSave" Content="Сохранить" Click="btSave_Click" FontFamily="Comic Sans MS" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" HorizontalAlignment="Left"  Margin="172,358,0,0" VerticalAlignment="Top" Width="99"/>
         <ComboBox x:Name="cbPat" SelectionChanged="cbPat_SelectionChanged" HorizontalAlignment="Left" Margin="250,43,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Выберитепациента" HorizontalAlignment="Left" FontFamily="Comic Sans MS" Margin="90,38,0,0" VerticalAlignment="Top"/>
+        <Label Content="Выберите пациента" HorizontalAlignment="Left" FontFamily="Comic Sans MS" Margin="90,38,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

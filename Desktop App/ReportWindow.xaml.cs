@@ -1,17 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.ConstrainedExecution;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Desktop_App
 {
@@ -24,7 +13,6 @@ namespace Desktop_App
 		{
 			InitializeComponent();
 		}
-
 		private void btPoisk_Click(object sender, RoutedEventArgs e)
 		{
 			try
@@ -51,7 +39,6 @@ namespace Desktop_App
 				}
 			} catch (Exception ex) { MessageBox.Show("Ошибка" + ex.Message); }
 		}
-
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
 			using (var db = new MedicalLaboratoryEntities3())
@@ -68,7 +55,6 @@ namespace Desktop_App
 				dgSer.ItemsSource = query.ToList();
 			}			
 		}
-
 		private void btchart_Click(object sender, RoutedEventArgs e)
 		{
 			ChartWindow window = new ChartWindow();

@@ -35,11 +35,6 @@ namespace Desktop_App
 		{
 			lbUserLastname.Content = currentUser.lastname;
 			lbUserName.Content = currentUser.name;
-			using (var db = new MedicalLaboratoryEntities3())
-			{
-				cm.ItemsSource = db.user.ToList();
-				cm.DisplayMemberPath = "surname + name";
-			}
 		}
 		private void btRed_Click(object sender, RoutedEventArgs e)
 		{

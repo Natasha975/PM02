@@ -1,18 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Windows.Threading;
 
 namespace Desktop_App
 {
@@ -29,11 +17,11 @@ namespace Desktop_App
 		private int loginA = 0;
 		private const int maxLoginA = 1;
 		private bool captchaEnabled = false;
-		
 		private void btvxod_Click(object sender, RoutedEventArgs e)
 		{
 			string log = tbLogin.Text;
 			string pass = passBox.Password;
+			DateTime loginDate = DateTime.Now;
 			try
 			{
 				using (var db = new MedicalLaboratoryEntities3())
@@ -42,7 +30,7 @@ namespace Desktop_App
 					var rol = db.role;
 					if (usern == null)
 					{
-						if (loginA >= maxLoginA)
+						if (loginA > maxLoginA)
 						{
 							captchaEnabled = true;
 							CapTB1.Text = captcha();
@@ -56,6 +44,13 @@ namespace Desktop_App
 						if (usern.role == 1)
 						{
 							MessageBox.Show("Вы пациент!");
+							var authorization = new authorization();
+							int last = db.authorization.Max(u => u.id) + 1;
+							authorization.id = last;
+							authorization.user_id = usern.id;
+							authorization.last_date_of_entry = loginDate;
+							db.authorization.Add(authorization);
+							db.SaveChanges();
 						}
 						else if (usern.role == 2)
 						{
@@ -63,6 +58,13 @@ namespace Desktop_App
 							AdminWindow adminForm = new AdminWindow(currentUser);
 							adminForm.Show();
 							Close();
+							var authorization = new authorization();
+							int last = db.authorization.Max(u => u.id) + 1;
+							authorization.id = last;
+							authorization.user_id = usern.id;
+							authorization.last_date_of_entry = loginDate;
+							db.authorization.Add(authorization);
+							db.SaveChanges();
 						}
 						else if (usern.role == 3)
 						{
@@ -70,6 +72,13 @@ namespace Desktop_App
 							AccountantWindow accountantWindow = new AccountantWindow(currentUser);
 							accountantWindow.Show();
 							this.Hide();
+							var authorization = new authorization();
+							int last = db.authorization.Max(u => u.id) + 1;
+							authorization.id = last;
+							authorization.user_id = usern.id;
+							authorization.last_date_of_entry = loginDate;
+							db.authorization.Add(authorization);
+							db.SaveChanges();
 						}
 						else if (usern.role == 4)
 						{
@@ -77,6 +86,13 @@ namespace Desktop_App
 							LabAssistantWindow labAssistantWindow = new LabAssistantWindow(currentUser);
 							labAssistantWindow.Show();
 							this.Hide();
+							var authorization = new authorization();
+							int last = db.authorization.Max(u => u.id) + 1;
+							authorization.id = last;
+							authorization.user_id = usern.id;
+							authorization.last_date_of_entry = loginDate;
+							db.authorization.Add(authorization);
+							db.SaveChanges();
 						}
 						else if (usern.role == 5)
 						{
@@ -84,6 +100,13 @@ namespace Desktop_App
 							LabAssisResearcherWindow labAssisResearcher = new LabAssisResearcherWindow(currentUser);
 							labAssisResearcher.Show();
 							this.Hide();
+							var authorization = new authorization();
+							int last = db.authorization.Max(u => u.id) + 1;
+							authorization.id = last;
+							authorization.user_id = usern.id;
+							authorization.last_date_of_entry = loginDate;
+							db.authorization.Add(authorization);
+							db.SaveChanges();
 						}
 						else { MessageBox.Show("Ошибка"); }
 					}
@@ -103,20 +126,31 @@ namespace Desktop_App
 		{
 			Random rnd = new Random();
 			char[] z = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'v', 'L', 'M', 'v', 'N', 'v', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'v', 'W', 'X', 'Y', 'Z', 'v', };
-
 			string captcha = "";
-
-			for (int i = 0; i != 8; i++)
+			for (int i = 0; i != 4; i++)
 			{
 				int j = rnd.Next(0, 62);
 				captcha += z[j];
 			}
 			return captcha;
 		}
-
 		private void Window_Loaded(object sender, RoutedEventArgs e)
 		{
 			CapTB.Visibility = Visibility.Collapsed;
+		}
+		private void cbSee_Checked(object sender, RoutedEventArgs e)
+		{
+			string a = passBox.Password;
+			tb.Text = a;
+			passBox.Visibility = Visibility.Hidden;
+			tb.Visibility = Visibility.Visible;
+		}
+		private void cbSee_Unchecked(object sender, RoutedEventArgs e)
+		{
+			string a = tb.Text;
+			passBox.Password = a;
+			tb.Visibility = Visibility.Hidden;
+			passBox.Visibility = Visibility.Visible;
 		}
 	}
 }

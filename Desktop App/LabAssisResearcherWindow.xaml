@@ -11,7 +11,8 @@
         <Label x:Name="lbUserLastname" HorizontalAlignment="Left" Margin="110,22,0,0" VerticalAlignment="Top" Height="34" Width="80"/>
         <Label x:Name="lbUserName" HorizontalAlignment="Left" Margin="195,22,0,0" VerticalAlignment="Top" Height="34" Width="67"/>
         <DataGrid x:Name="dgService" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="32,76,117,121"/>
-        <Button x:Name="btSer" Content="Услуги" Click="btSer_Click" HorizontalAlignment="Left" Margin="47,352,0,0" VerticalAlignment="Top" Width="143"/>
-        <Button x:Name="btUpt" Content="Обновить" Click="btUpt_Click" HorizontalAlignment="Left" Margin="257,352,0,0" VerticalAlignment="Top" Width="143"/>
+        <Button FontFamily="Comic Sans MS" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" x:Name="btSer" Content="Услуги" Click="btSer_Click" HorizontalAlignment="Left" Margin="47,352,0,0" VerticalAlignment="Top" Width="143"/>
+        <Button FontFamily="Comic Sans MS" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" x:Name="btUpt" Content="Обновить" Click="btUpt_Click" HorizontalAlignment="Left" Margin="257,352,0,0" VerticalAlignment="Top" Width="143"/>
+        <Image Source="\labIssl.png" HorizontalAlignment="Left" Height="38" Margin="290,18,0,0" VerticalAlignment="Top" Width="44"/>
     </Grid>
 </Window>

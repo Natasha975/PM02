@@ -24,7 +24,6 @@ namespace Desktop_App
 		{
 			InitializeComponent();
 		}
-
 		private void Window_Loaded(object sender, RoutedEventArgs e)
 		{
 			using (var db = new MedicalLaboratoryEntities3())

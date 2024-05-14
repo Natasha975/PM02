@@ -25,6 +25,10 @@ using System.Drawing.Imaging;
 using MessagingToolkit.QRCode.Codec;
 using MessagingToolkit.QRCode.Codec.Data;
 using System.Reflection.Emit;
+using iTextSharp;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using static System.Net.Mime.MediaTypeNames;
 
 
 namespace Desktop_App
@@ -61,13 +65,17 @@ namespace Desktop_App
 			lab.Show();
 			Close();
 		}
-
 		private void CodeBtn_Click(object sender, RoutedEventArgs e)
 		{
+			AS();
+		}
+		private void AS()
+		{
+			// Формирование кода
 			try
 			{
-				int code;
-				int lastOrderNumber = int.Parse(tbCode.Text);
+				int code = int.Parse(tbCode.Text);
+				DateTime lastOrderNumber = DateTime.Now;
 				if (!int.TryParse(tbCode.Text, out code))
 				{
 					MessageBox.Show("Введенный код не является числом", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
@@ -85,70 +93,11 @@ namespace Desktop_App
 				image.StreamSource = ms;
 				image.EndInit();
 				im.Source = image;
-
-
-				// Создать пустой MemoryStream
-				//using (var memoryStream = new MemoryStream())
-				//{
-				// Сгенерировать штрих-код и сохранить его в MemoryStream
-				//barcodeControl.
-				//memoryStream.Write(barcod.GetImage(200, 200, false), 0, barcod.GetImage(200, 200, false).Length);
-				// Создать BitmapImage из MemoryStream
-				//var bitmapImage = new BitmapImage();
-				//bitmapImage.BeginInit();
-				//bitmapImage.StreamSource = memoryStream;
-				//bitmapImage.EndInit();
-				// Показать штрих-код на экране
-				//im.Source = bitmapImage;
-				//};
 			}
 			catch (Exception ex)
 			{
 				MessageBox.Show(ex.Message);
 			}
-
-			// Получение номера пробирки
-			//int code;
-			//int lastOrderNumber = int.Parse(tbCode.Text);
-			//if (!int.TryParse(tbCode.Text, out code))
-			//{
-			//	MessageBox.Show("Введенный код не является числом", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
-			//	return;
-			//}
-			//// Генерация уникального кода
-			//string uniqueCode = GenerateUniqueCode();
-			//// Формирование штрих-кода
-			//string barcode = $"{code}{lastOrderNumber.ToString("yyyyMMdd")}{uniqueCode}";
-			//// Сохранение штрих-кода в PDF
-			////SaveBarcodeToPdf(barcode);
-			//var imageType = "Png";
-			//var imageFormat = (BarCodeImageFormat)Enum.Parse(typeof(BarCodeImageFormat), imageType.ToString());
-			//// Отображение штрих-кода на экране
-			//Barcode barcod = new Barcode();
-			//barcod.Text = barcode;
-			//barcod.BarcodeType = EncodeTypes.Code128;
-			//barcod.ImageType = imageFormat;
-			//try
-			//{
-			//	// Создать пустой MemoryStream
-			//	//using (var memoryStream = new MemoryStream())
-			//	//{
-			//		// Сгенерировать штрих-код и сохранить его в MemoryStream
-			//		//barcodeControl.
-			//		//memoryStream.Write(barcod.GetImage(200, 200, false), 0, barcod.GetImage(200, 200, false).Length);
-			//		// Создать BitmapImage из MemoryStream
-			//		//var bitmapImage = new BitmapImage();
-			//		//bitmapImage.BeginInit();
-			//		//bitmapImage.StreamSource = memoryStream;
-			//		//bitmapImage.EndInit();
-			//		// Показать штрих-код на экране
-			//		//im.Source = bitmapImage;
-			//	//};
-			//}
-			//catch (Exception ex)
-			//{
-			//	MessageBox.Show(ex.Message);
-			//}
 		}
 		private string GenerateUniqueCode()
 		{
@@ -188,6 +137,33 @@ namespace Desktop_App
 				}
 				catch (Exception ex) { MessageBox.Show("Ошибка при добавлении посетителя: " + ex.Message); }
 			}
+		}
+		private void tbCode_KeyDown(object sender, KeyEventArgs e)
+		{
+			AS();
+		}
+		private void SaveBtn_Click(object sender, RoutedEventArgs e)
+		{
+			PngBitmapEncoder encoder = new PngBitmapEncoder();
+			encoder.Frames.Add(BitmapFrame.Create((BitmapSource)im.Source));
+			using (MemoryStream ms = new MemoryStream())
+			{
+				encoder.Save(ms);
+				byte[] imageBytes = ms.ToArray();
+				iTextSharp.text.Document doc = new iTextSharp.text.Document();
+				string uniqueCode = GenerateUniqueCode();
+				PdfWriter.GetInstance(doc, new FileStream($"pdfDoc{uniqueCode}.pdf", FileMode.Create));
+				doc.Open();
+				iTextSharp.text.Image pdfImage = iTextSharp.text.Image.GetInstance(imageBytes);
+				doc.Add(pdfImage);
+				doc.Close();
+			}
+			MessageBox.Show("PDF-документ сохранен");		
+		}
+		private void btAdd_Click(object sender, RoutedEventArgs e)
+		{
+			AddPatientWindow window = new AddPatientWindow();
+			window.ShowDialog();
 		}
 	}
 }

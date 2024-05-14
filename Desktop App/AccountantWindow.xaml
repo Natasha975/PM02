@@ -10,6 +10,12 @@
         <Button x:Name="nazad" FontFamily="Comic Sans MS" FontWeight="Bold" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" Click="nazad_Click" Content="Назад" HorizontalAlignment="Left" Margin="14,22,0,0" VerticalAlignment="Top" Height="34" Width="73"/>
         <Label x:Name="lbUserLastname" HorizontalAlignment="Left" Margin="110,22,0,0" VerticalAlignment="Top" Height="34" Width="80"/>
         <Label x:Name="lbUserName" HorizontalAlignment="Left" Margin="195,22,0,0" VerticalAlignment="Top" Height="34" Width="67"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="32,76,117,121"/>
+        <DataGrid x:Name="dgChet" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="32,76,117,121"/>
+        <Image Source="\Account.jpeg" HorizontalAlignment="Left" Height="38" Margin="290,18,0,0" VerticalAlignment="Top" Width="27"/>
+        <DatePicker x:Name="dpStart" SelectedDateChanged="dpStart_SelectedDateChanged" HorizontalAlignment="Left" Margin="492,39,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="dpEnd" SelectedDateChanged="dpStart_SelectedDateChanged" HorizontalAlignment="Left" Margin="625,39,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btPdfSave" FontFamily="Comic Sans MS" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" Click="btPdfSave_Click" Content="Выгрузить в PDF" HorizontalAlignment="Left" Margin="77,359,0,0" VerticalAlignment="Top" Height="34" Width="163"/>
+        <Button x:Name="btCsvSave" FontFamily="Comic Sans MS" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" Click="btCsvSave_Click" Content="Выгрузить в SCV" HorizontalAlignment="Left" Margin="284,359,0,0" VerticalAlignment="Top" Height="34" Width="171"/>
+        <Button x:Name="btOp" FontFamily="Comic Sans MS" Background="{x:Null}" BorderBrush="White" Foreground="White" FontSize="16" Click="btOp_Click" Content="Обновить" HorizontalAlignment="Left" Margin="512,359,0,0" VerticalAlignment="Top" Height="34" Width="171"/>
     </Grid>
 </Window>

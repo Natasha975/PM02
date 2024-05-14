@@ -19,8 +19,20 @@ namespace Desktop_App
         {
             this.performed_service = new HashSet<performed_service>();
         }
-    
-        public int id { get; set; }
+
+		public work_analyzer(int maxIdWork, int id1, DateTime now, TimeSpan timeSpan, int v1, int id2, string v2, string v3)
+		{
+			MaxIdWork=maxIdWork;
+			Id1=id1;
+			Now=now;
+			TimeSpan=timeSpan;
+			V1=v1;
+			Id2=id2;
+			V2=v2;
+			V3=v3;
+		}
+
+		public int id { get; set; }
         public Nullable<int> analyzer_id { get; set; }
         public System.DateTime order_received_date { get; set; }
         public System.TimeSpan order_received_time { get; set; }
@@ -33,5 +45,13 @@ namespace Desktop_App
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<performed_service> performed_service { get; set; }
         public virtual service service { get; set; }
-    }
+		public int MaxIdWork { get; }
+		public int Id1 { get; }
+		public DateTime Now { get; }
+		public TimeSpan TimeSpan { get; }
+		public int V1 { get; }
+		public int Id2 { get; }
+		public string V2 { get; }
+		public string V3 { get; }
+	}
 }

@@ -1,17 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 using System.Windows.Threading;
+using System.Text.Json;
+using System.IO;
 
 namespace Desktop_App
 {
@@ -25,7 +17,6 @@ namespace Desktop_App
 		{
 			InitializeComponent();
 		}
-
 		private void Window_Loaded(object sender, RoutedEventArgs e)
 		{
 			using (var db = new MedicalLaboratoryEntities3())
@@ -36,8 +27,7 @@ namespace Desktop_App
 				cbAn.DisplayMemberPath = "name";
 			}
 		}
-
-		private void btIss_Click(object sender, RoutedEventArgs e)
+		private async void btIss_Click(object sender, RoutedEventArgs e)
 		{
 			timer = new DispatcherTimer();
 			timer.Interval = TimeSpan.FromSeconds(10);
@@ -47,20 +37,24 @@ namespace Desktop_App
 			{
 				try
 				{
-					var newWork = new work_analyzer();
-					int maxIdVisitor = db.work_analyzer.Max(u => u.id) + 1;
+					int maxIdWork = db.work_analyzer.Max(u => u.id) + 1;
 					var selectedAn = (analyzer)cbAn.SelectedItem;
-					newWork.analyzer_id = selectedAn.id;
-					newWork.order_received_date = DateTime.Now;
 					var dateTime = DateTime.Now;
 					var timeSpan = dateTime.TimeOfDay;
 					var timeString = timeSpan.ToString();
-					newWork.order_received_time = timeSpan;
-					newWork.order_execution_time_sec_ = 10;
 					var selectedSer = (service)cbSer.SelectedItem;
-					newWork.service_id = selectedSer.id;
-					newWork.result = "Исследование";
-					newWork.status = "Отправлена на исследование";
+
+					var newWork = new work_analyzer 
+					{
+						id = maxIdWork,
+						analyzer_id = selectedAn.id,
+						order_received_date = DateTime.Now,
+						order_received_time = timeSpan,
+						order_execution_time_sec_ = 10,
+						service_id = selectedSer.id,
+						result = "Исследование",
+						status = "Отправлена на исследование",
+					};
 					try
 					{
 						db.work_analyzer.Add(newWork);
@@ -70,6 +64,11 @@ namespace Desktop_App
 					catch
 					{
 						MessageBox.Show("Услуга не может быть отправлена на анализатор!");
+					}
+					using (FileStream fs = new FileStream("user.json", FileMode.OpenOrCreate))
+					{
+						work_analyzer tom = new work_analyzer(maxIdWork, selectedAn.id, DateTime.Now, timeSpan, 10, selectedSer.id, "Исследование", "Отправлена на исследование");
+						await JsonSerializer.SerializeAsync<work_analyzer>(fs, tom);
 					}
 				}
 				catch (Exception ex) { MessageBox.Show("Ошибка: " + ex.Message); }
