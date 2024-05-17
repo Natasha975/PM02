@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Desktop_App
 {
@@ -23,24 +25,27 @@ namespace Desktop_App
 		public AddPatientWindow()
 		{
 			InitializeComponent();
-			using (var db = new MedicalLaboratoryEntities())
+			try
 			{
-				cbType.ItemsSource = db.ins_policy_type.ToList();
-				cbComp.ItemsSource = db.ins_company.ToList();
+				using (var db = new MedicalLaboratoryEntities())
+				{
+					cbType.ItemsSource = db.ins_policy_type.ToList();
+					cbComp.ItemsSource = db.ins_company.ToList();
 
-				cbType.DisplayMemberPath = "name";
-				cbComp.DisplayMemberPath = "company_name";
-			}
+					cbType.DisplayMemberPath = "name";
+					cbComp.DisplayMemberPath = "company_name";
+				}
+			} catch (Exception ex) { MessageBox.Show("Ошибка: " + ex.Message); }
 		}
 		private void btAdd_Click(object sender, RoutedEventArgs e)
 		{
-			string login = RegisterVisitor(tbEmail.Text);
 			using (var db = new MedicalLaboratoryEntities())
 			{
 				try
 				{
 					int maxIdUs = db.user.Max(u => u.id) + 1;
 					int maxIdUsAdd = db.add_inform.Max(u => u.id) + 1;
+					string login = GenerateUniqueCode();
 					string log = $"{login}{maxIdUs}";
 					string uniqueCode = GenerateUniqueCode();
 					int ser = int.Parse(tbSer.Text);
@@ -100,7 +105,7 @@ namespace Desktop_App
 			string login = $"{username}";
 			return login;
 		}
-		private string GenerateUniqueCode()
+		public string GenerateUniqueCode()
 		{
 			Random random = new Random();
 			const string chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";

@@ -99,7 +99,7 @@ namespace Desktop_App
 				MessageBox.Show(ex.Message);
 			}
 		}
-		private string GenerateUniqueCode()
+		public string GenerateUniqueCode()
 		{
 			Random random = new Random();
 			const string chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";

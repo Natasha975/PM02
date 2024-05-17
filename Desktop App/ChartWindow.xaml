@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Desktop_App"
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d"
-        Title="ChartWindow" Height="450" Width="800" Background="#FF76E383" WindowStartupLocation="CenterScreen">
+        Title="Мед Лаб" Height="450" Width="800" Background="#FF76E383" WindowStartupLocation="CenterScreen">
     <Grid>
         <lvc:CartesianChart Series="{Binding SeriesCollection}" LegendLocation="Left">
             <lvc:CartesianChart.AxisX>
@@ -16,7 +16,6 @@
                 <lvc:Axis Title="Пределы значений" />
                 <lvc:Axis MaxValue="10" MinValue="-10" MinRange="-10" MaxRange="10"/>
             </lvc:CartesianChart.AxisY>
-            <!--<lvc:LineSeries Title="Пределы" Values="{Binding Limits}" />-->
         </lvc:CartesianChart>
         <Label x:Name="lbSrOtk" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
     </Grid>

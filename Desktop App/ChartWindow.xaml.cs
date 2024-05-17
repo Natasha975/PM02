@@ -34,7 +34,7 @@ namespace Desktop_App
 				dates = db.work_analyzer.Select(d => d.order_received_date.ToString()).ToList();
 				var mylineseries = new LineSeries
 				{
-					Title = "PC",
+					Title = "Результат",
 					LineSmoothness = 0,
 					PointGeometry = null,
 					Values = new  ChartValues<double>(temp)

@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Chart\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3FEEF17F-B23A-4760-8F84-9CAF3D8247ED}|Chart.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C.02\\chart\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3FEEF17F-B23A-4760-8F84-9CAF3D8247ED}|Chart.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3FEEF17F-B23A-4760-8F84-9CAF3D8247ED}|Chart.csproj|C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Chart\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3FEEF17F-B23A-4760-8F84-9CAF3D8247ED}|Chart.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3FEEF17F-B23A-4760-8F84-9CAF3D8247ED}|Chart.csproj|c:\\users\\\u043D\u0430\u0442\u0430\u043B\u044C\u044F\\desktop\\\u043F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u043F\u043C.02\\chart\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3FEEF17F-B23A-4760-8F84-9CAF3D8247ED}|Chart.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,20 +26,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Chart\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
               "ToolTip": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Chart\\Form1.cs",
               "RelativeToolTip": "Form1.cs",
-              "ViewState": "AQIAAGsAAAAAAAAAAAAAACwAAAAxAAAA",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAYwHsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-16T10:24:03.199Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\\u041D\u0430\u0442\u0430\u043B\u044C\u044F\\Desktop\\\u041F\u0440\u0430\u043A\u0442\u0438\u043A\u0430 \u041F\u041C.02\\Chart\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",

@@ -1,0 +1,7 @@
+C:\Users\Наталья\Desktop\Практика ПМ.02\Simpl\bin\Debug\Simpl.exe.config
+C:\Users\Наталья\Desktop\Практика ПМ.02\Simpl\bin\Debug\Simpl.exe
+C:\Users\Наталья\Desktop\Практика ПМ.02\Simpl\bin\Debug\Simpl.pdb
+C:\Users\Наталья\Desktop\Практика ПМ.02\Simpl\obj\Debug\Simpl.csproj.AssemblyReference.cache
+C:\Users\Наталья\Desktop\Практика ПМ.02\Simpl\obj\Debug\Simpl.csproj.CoreCompileInputs.cache
+C:\Users\Наталья\Desktop\Практика ПМ.02\Simpl\obj\Debug\Simpl.exe
+C:\Users\Наталья\Desktop\Практика ПМ.02\Simpl\obj\Debug\Simpl.pdb

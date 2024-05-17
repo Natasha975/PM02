@@ -135,7 +135,6 @@
     <Compile Include="authorization.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Barcode.cs" />
     <Compile Include="biomaterial.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>

@@ -20,23 +20,17 @@ namespace Chart
 		{
 			InitializeComponent();
 		}
-
-		private void Form1_Load(object sender, EventArgs e)
-		{
-
-		}
-
 		private void pictureBox1_Paint(object sender, PaintEventArgs e)
 		{
 			float scale = 10.0f;
-			e.Graphics.TranslateTransform(pictureBox1.Width / 2, pictureBox1.Height / 2);
-			e.Graphics.ScaleTransform(1, -1);
+			e.Graphics.TranslateTransform(0, pictureBox1.Height);
+			e.Graphics.ScaleTransform(2, -2);
 			DrawLine(e.Graphics, new double[] { 2, 1 }, 10, scale);
-			DrawLine(e.Graphics, new double[] { -2, 3 }, 6, scale);
+			//DrawLine(e.Graphics, new double[] { -2, 3 }, 6, scale);
 			DrawLine(e.Graphics, new double[] { 2, 4 }, 8, scale);
 
 			// Построение целевой функции
-			DrawLine(e.Graphics, new double[] { 3, 4 }, 0, scale);
+			DrawLine(e.Graphics, new double[] { 2, 3 }, 0, scale);
 
 			// Поиск оптимального решения
 			double[] optimalSolution = FindOptimalSolution();
@@ -46,6 +40,7 @@ namespace Chart
 
 			e.Graphics.DrawLine(new Pen(Color.Black, 2f), 0, 0, 0, 200);
 			e.Graphics.DrawLine(new Pen(Color.Black, 2f), 0, 0, 200, 0);
+			e.Graphics.DrawLine(new Pen(Color.Red, 1f), 0, 20, 60, 60);
 		}
 		// Метод для построения линии
 		private void DrawLine(Graphics g, double[] coefficients, double constant, float scale)
@@ -64,7 +59,6 @@ namespace Chart
 			// Рисование линии
 			g.DrawLine(Pens.Red, (float)x1, (float)y1, (float)x2, (float)y2);
 		}
-
 		// Метод для поиска оптимального решения
 		private double[] FindOptimalSolution()
 		{
@@ -76,7 +70,6 @@ namespace Chart
 
 			return optimalSolution;
 		}
-
 		private double[] FindIntersection(double[] coefficients1, double constant1, params double[][] otherIntersections)
 		{
 			double[] intersection = new double[2];
@@ -96,13 +89,39 @@ namespace Chart
 
 			return intersection;
 		}
-
 		private void DrawPoint(Graphics g, double[] point, float scale)
 		{
 			float x = (float)(point[0] * scale);
 			float y = (float)(point[1] * scale);
 
 			g.FillEllipse(Brushes.Red, x - 2, y - 2, 4, 4);
+		}
+
+		private void pictureBox2_Paint(object sender, PaintEventArgs e)
+		{
+			float scale = 10.0f;
+			e.Graphics.TranslateTransform(0, pictureBox1.Height);
+			e.Graphics.ScaleTransform(2, -2);
+			DrawLine(e.Graphics, new double[] { 1, 2 }, 4, scale);
+			DrawLine(e.Graphics, new double[] { 1, 3 }, 3, scale);
+			DrawLine(e.Graphics, new double[] { 2, 1 }, 8, scale);
+
+			// Построение целевой функции
+			DrawLine(e.Graphics, new double[] { 3, 4 }, 0, scale);
+
+			// Поиск оптимального решения
+			double[] optimalSolution = FindOptimalSolution();
+
+			// Отображение оптимального решения
+			DrawPoint(e.Graphics, optimalSolution, scale);
+
+			e.Graphics.DrawLine(new Pen(Color.Black, 2f), 0, 0, 0, 200);
+			e.Graphics.DrawLine(new Pen(Color.Black, 2f), 0, 0, 200, 0);
+		}
+
+		private void label9_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
